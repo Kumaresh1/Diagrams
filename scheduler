@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-14T13:55:37.165Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="Zi7JghSaHqKovwEtforN" version="17.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-14T14:01:25.655Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="oG-QTmYAmUfQBaaHmZIf" version="17.4.5" type="github">
   <diagram id="JVb72HbbDXCgXqO5QnnE" name="Page-1">
     <mxGraphModel dx="3598" dy="2905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -18,7 +18,7 @@
         <mxCell id="IgSm1n1338Kr1wg-YJm9-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IgSm1n1338Kr1wg-YJm9-5" target="IgSm1n1338Kr1wg-YJm9-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="IgSm1n1338Kr1wg-YJm9-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;workflows&lt;/font&gt;&lt;br&gt;&lt;/b&gt;[workflowId: string]: {&lt;br&gt;&lt;b&gt;				name&lt;/b&gt;: string,&lt;br&gt;&lt;b&gt;				options&lt;/b&gt;: Array&amp;lt;{&lt;br&gt;					id: string,&lt;br&gt;					name: string,&lt;br&gt;					color: string&lt;br&gt;				}&amp;gt;&lt;br&gt;			}&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22workflows%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22295%22%20y%3D%2270%22%20width%3D%22250%22%20height%3D%22140%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IgSm1n1338Kr1wg-YJm9-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;workflows&lt;br&gt;&lt;/font&gt;currentWorkflow&lt;/b&gt;: string,&lt;b&gt;&lt;br&gt;&lt;/b&gt;[workflowId: string]: {&lt;br&gt;&lt;b&gt;				name&lt;/b&gt;: string,&lt;br&gt;&lt;b&gt;				options&lt;/b&gt;: Array&amp;lt;{&lt;br&gt;					id: string,&lt;br&gt;					name: string,&lt;br&gt;					color: string&lt;br&gt;				}&amp;gt;&lt;br&gt;			}&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22workflows%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22295%22%20y%3D%2270%22%20width%3D%22250%22%20height%3D%22140%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="285" y="-60" width="270" height="210" as="geometry" />
         </mxCell>
         <mxCell id="IgSm1n1338Kr1wg-YJm9-6" value="status" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -59,6 +59,20 @@
         </mxCell>
         <mxCell id="IgSm1n1338Kr1wg-YJm9-20" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Redux&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="-150" y="-630" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IgSm1n1338Kr1wg-YJm9-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.648;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="IgSm1n1338Kr1wg-YJm9-24" target="IgSm1n1338Kr1wg-YJm9-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1515" y="-170" />
+              <mxPoint x="460" y="-170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IgSm1n1338Kr1wg-YJm9-24" value="&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;Drag and Drop&lt;/b&gt;&lt;br&gt;[column:[{task}...],&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;column:[{task}...]]&lt;/span&gt;&lt;b style=&quot;font-size: 14px&quot;&gt;&lt;br&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="-60" width="290" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="IgSm1n1338Kr1wg-YJm9-27" value="Fetch data from generate columns&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="-150" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
